@@ -1,0 +1,105 @@
+/* ccs voor de hele website */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* ccs voor de landingspagina */
+
+.landing-container {
+    background-image: url('https://img.freepik.com/premium-vector/abstract-modern-blue-black-background-vector-illustration-design-presentation-banner-cover-web-flyer-card-poster-wallpaper-texture-slide-magazine-powerpoint_249611-4113.jpg');
+    /* background-color: #0099ff; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.center-content {
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.continue-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #005f99;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.continue-button:hover {
+    background-color: #003366;
+
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    80% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.center-content h1 {
+    animation: fadeInUp 1s ease-out;
+    animation-delay: 0.5s;
+}
+
+.continue-button {
+    animation: fadeInScale 1.5s ease-out;
+    animation-delay: 1s;
+}
+
+
+.landing-container {
+    animation: backgroundFade 5s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundFade {
+    from {
+        background-color: #0099ff;
+    }
+
+    to {
+        background-color: #0066cc;
+    }
+}
