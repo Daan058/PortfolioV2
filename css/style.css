@@ -149,6 +149,7 @@ header {
     color: white;
     text-align: center;
     padding: 20px 0;
+    height: auto;
 }
 
 .footer-content {
@@ -330,5 +331,16 @@ header {
     .contact-form,
     .contact-images {
         flex-basis: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+}
+
+.imgcontact {
+    width: 550px;
+    height: 550px;
+    border-radius: 20px;
+    margin-left: 800px;
+    margin-top: -400px;
 }
