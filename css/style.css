@@ -111,11 +111,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(57, 57, 240); /* Basis donkerblauwe kleur */
+    background-color: rgb(57, 57, 240);
+    /* Basis donkerblauwe kleur */
     text-align: center;
     padding: 10px 0;
     height: 75px;
-    transition: background-color 0.3s; /* Gladde overgang voor de achtergrondkleur */
+    transition: background-color 0.3s;
+    /* Gladde overgang voor de achtergrondkleur */
 }
 
 .nav-item {
@@ -126,19 +128,24 @@ header {
     padding: 5px 10px;
     border: 2px solid transparent;
     border-radius: 10px;
-    transition: background-color 0.3s, border-color 0.3s, padding 0.3s, font-size 0.3s; /* Gladde overgangen voor hover-effecten */
+    transition: background-color 0.3s, border-color 0.3s, padding 0.3s, font-size 0.3s;
+    /* Gladde overgangen voor hover-effecten */
 }
 
 .nav-item:hover {
-    background-color: darkblue; /* Donkerdere blauwe kleur bij hover */
+    background-color: darkblue;
+    /* Donkerdere blauwe kleur bij hover */
     border: 2px solid white;
-    padding: 10px 20px; /* Grotere padding bij hover */
-    font-size: 22px; /* Grotere font-size bij hover */
+    padding: 10px 20px;
+    /* Grotere padding bij hover */
+    font-size: 22px;
+    /* Grotere font-size bij hover */
 }
 
 /* Css Footer  */
 .footer {
-    background-color: #0A4DA2; /* Blue background */
+    background-color: #0A4DA2;
+    /* Blue background */
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -159,11 +166,13 @@ header {
 }
 
 .footer-section h3 {
-    color: #FFD700; /* Golden color for headings */
+    color: #FFD700;
+    /* Golden color for headings */
     margin-bottom: 15px;
 }
 
-.footer-section p, .footer-section ul {
+.footer-section p,
+.footer-section ul {
     line-height: 1.6;
 }
 
@@ -179,7 +188,8 @@ header {
 }
 
 .footer-section ul li a:hover {
-    color: #FFD700; /* Golden color on hover */
+    color: #FFD700;
+    /* Golden color on hover */
 }
 
 .social-links a {
@@ -210,3 +220,115 @@ header {
     }
 }
 
+/* Contact css */
+
+.contact-page {
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f8ff;
+    /* Zachte blauwe achtergrondkleur */
+    color: #0A4DA2;
+    /* Blauw, net als in je header en footer */
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-page::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    background-color: #0A4DA2;
+    /* Donkerdere blauwe kleur voor figuur */
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.contact-page::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    background-color: #FFD700;
+    /* Gouden kleur voor figuur */
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.contact-form-container {
+    position: relative;
+    z-index: 1;
+
+}
+
+.contact-form {
+    width: 50%;
+    flex-basis: 60%;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 5px;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-field textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    background-color: #0A4DA2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #085a8c;
+}
+
+.contact-images {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .contact-form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form,
+    .contact-images {
+        flex-basis: 100%;
+    }
+}
