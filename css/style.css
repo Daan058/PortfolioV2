@@ -320,12 +320,14 @@ header {
 
 /* Project Css  */
 .projects-page {
+
     text-align: center;
     padding: 20px;
 }
 
 .projects-page h2 {
-    color: #0A4DA2; /* Blauw */
+    color: #0A4DA2;
+    /* Blauw */
 }
 
 .projects-container {
@@ -337,9 +339,9 @@ header {
 .project {
     width: 30%;
     margin: 15px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     background: rgb(127, 195, 254);
 }
 
@@ -349,7 +351,8 @@ header {
 }
 
 .project h3 {
-    color: #0A4DA2; /* Blauw */
+    color: #0A4DA2;
+    /* Blauw */
 }
 
 @media (max-width: 768px) {
@@ -357,18 +360,106 @@ header {
         width: 100%;
     }
 }
+
 .projects-background {
-    border-radius: 20px;
     background-image: url('../img/bg.jpg');
-    background-color: #f0f8ff; /* Zachte blauwe achtergrondkleur */
+    background-color: #f0f8ff;
     position: relative;
     overflow: hidden;
 }
 
-.projectafbeelding{
+.projectafbeelding {
     border-radius: 20px;
 }
 
 
 /* Home Css   */
 
+/* Achtergrondstijl voor de homepagina */
+.home-background {
+    background-color: #f0f8ff;
+    /* Zachte blauwe achtergrondkleur */
+    position: relative;
+    overflow: hidden;
+}
+
+.home-background::before,
+.home-background::after {
+    content: '';
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.home-background::before {
+    top: -100px;
+    right: -100px;
+    background-color: #0A4DA2;
+    /* Donkerdere blauwe kleur voor figuur */
+    width: 300px;
+    height: 300px;
+}
+
+.home-background::after {
+    bottom: -120px;
+    left: -120px;
+    background-color: #FFD700;
+    /* Gouden kleur voor figuur */
+    width: 250px;
+    height: 250px;
+}
+
+/* Stijlen voor de inhoud van de homepage */
+.home-page {
+    text-align: center;
+    padding: 20px;
+}
+
+.intro-section {
+    margin-bottom: 30px;
+}
+
+.intro-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    color: #0A4DA2;
+    /* Blauw */
+}
+.hobbytitel{
+    color: #0A4DA2;
+}
+.hobbies-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.hobby {
+    width: 30%;
+    margin: 15px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.hobby h3 {
+    color: #0A4DA2;
+    /* Blauw */
+}
+
+@media (max-width: 768px) {
+    .hobbies-section {
+        flex-direction: column;
+    }
+
+    .hobby {
+        width: 100%;
+    }
+}
