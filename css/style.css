@@ -202,6 +202,9 @@ header {
     }
 }
 
+/* Css Contact  */
+
+
 .contact-page {
     justify-content: center;
     text-align: center;
@@ -375,16 +378,27 @@ header {
 
 /* Home Css   */
 
+.certificaat{
+    width: 500px;
+}
+
+.boot,
+.pc{
+    border-radius: 20px;
+    width: 500px;
+    height: 450px;
+}
+
 /* Achtergrondstijl voor de homepagina */
-.home-background {
+.about-background {
     background-color: #f0f8ff;
     /* Zachte blauwe achtergrondkleur */
     position: relative;
     overflow: hidden;
 }
 
-.home-background::before,
-.home-background::after {
+.about-background::before,
+.about-background::after {
     content: '';
     position: absolute;
     border-radius: 100%;
@@ -392,7 +406,7 @@ header {
     z-index: 0;
 }
 
-.home-background::before {
+.about-background::before {
     top: -100px;
     right: -100px;
     background-color: #0A4DA2;
@@ -401,7 +415,7 @@ header {
     height: 300px;
 }
 
-.home-background::after {
+.about-background::after {
     bottom: -120px;
     left: -120px;
     background-color: #FFD700;
@@ -411,7 +425,7 @@ header {
 }
 
 /* Stijlen voor de inhoud van de homepage */
-.home-page {
+.about-page {
     text-align: center;
     padding: 20px;
 }
