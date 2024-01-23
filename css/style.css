@@ -1,3 +1,5 @@
+/* css voor de hele website  */
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
 body,
@@ -7,6 +9,8 @@ html {
     height: 100%;
     font-family: Arial, sans-serif;
 }
+
+/* css landingspagina */
 
 .landing-container {
     background-image: url('..\/img/bg.jpg');
@@ -97,6 +101,12 @@ html {
         background-color: #0066cc;
     }
 }
+.text-index{
+    font-size: large;
+}
+
+
+/* css header  */
 
 header {
     display: flex;
@@ -126,6 +136,8 @@ header {
     padding: 10px 20px;
     font-size: 22px;
 }
+
+/* css footer  */
 
 .footer {
     background-color: #0A4DA2;
@@ -330,7 +342,7 @@ header {
 
 .projects-page h2 {
     color: #0A4DA2;
-    /* Blauw */
+
 }
 
 .projects-container {
@@ -355,7 +367,7 @@ header {
 
 .project h3 {
     color: #0A4DA2;
-    /* Blauw */
+
 }
 
 @media (max-width: 768px) {
@@ -376,23 +388,21 @@ header {
 }
 
 
-/* Home Css   */
+/* about Css   */
 
-.certificaat{
+.certificaat {
     width: 500px;
 }
 
 .boot,
-.pc{
+.pc {
     border-radius: 20px;
     width: 500px;
     height: 450px;
 }
 
-/* Achtergrondstijl voor de homepagina */
 .about-background {
     background-color: #f0f8ff;
-    /* Zachte blauwe achtergrondkleur */
     position: relative;
     overflow: hidden;
 }
@@ -410,7 +420,6 @@ header {
     top: -100px;
     right: -100px;
     background-color: #0A4DA2;
-    /* Donkerdere blauwe kleur voor figuur */
     width: 300px;
     height: 300px;
 }
@@ -419,18 +428,19 @@ header {
     bottom: -120px;
     left: -120px;
     background-color: #FFD700;
-    /* Gouden kleur voor figuur */
     width: 250px;
     height: 250px;
 }
 
-/* Stijlen voor de inhoud van de homepage */
 .about-page {
     text-align: center;
     padding: 20px;
 }
 
 .intro-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin-bottom: 30px;
 }
 
@@ -443,11 +453,13 @@ header {
 
 .intro-text {
     color: #0A4DA2;
-    /* Blauw */
+
 }
-.hobbytitel{
+
+.hobbytitel {
     color: #0A4DA2;
 }
+
 .hobbies-section {
     display: flex;
     justify-content: space-around;
@@ -465,7 +477,6 @@ header {
 
 .hobby h3 {
     color: #0A4DA2;
-    /* Blauw */
 }
 
 @media (max-width: 768px) {
