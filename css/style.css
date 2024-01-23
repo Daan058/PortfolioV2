@@ -101,7 +101,8 @@ html {
         background-color: #0066cc;
     }
 }
-.text-index{
+
+.text-index {
     font-size: large;
 }
 
@@ -390,6 +391,19 @@ header {
 
 /* about Css   */
 
+.foto {
+    width: 250px;
+    height: 250px;
+    margin-left: -1600px;
+    margin-top: 50px;
+    margin-bottom: -200px;
+    border-radius: 300px;
+    flex: 0 0 30%;
+    text-align: center;
+    padding-right: 15px;
+}
+
+
 .certificaat {
     width: 500px;
 }
@@ -480,6 +494,31 @@ header {
 }
 
 @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto {
+        flex: none;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .text-content {
+        flex: none;
+        width: 100%;
+    }
+
     .hobbies-section {
         flex-direction: column;
     }
@@ -487,4 +526,6 @@ header {
     .hobby {
         width: 100%;
     }
+
+
 }
