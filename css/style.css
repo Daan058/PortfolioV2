@@ -1,7 +1,8 @@
-/* css voor de hele website  */
+/* icoontjes geimporteerd  */
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
+/* css voor hele website  */
 body,
 html {
     margin: 0;
@@ -10,8 +11,7 @@ html {
     font-family: Arial, sans-serif;
 }
 
-/* css landingspagina */
-
+/* achtergrond van de landingspagina  */
 .landing-container {
     background-image: url('..\/img/bg.jpg');
     height: 100%;
@@ -24,6 +24,8 @@ html {
     background-position: center;
 }
 
+
+/* zorgt voor dat de text gecenterd word */
 .center-content {
     max-width: 600px;
     padding: 20px;
@@ -34,6 +36,7 @@ html {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* de knop */
 .continue-button {
     display: inline-block;
     margin-top: 20px;
@@ -45,11 +48,13 @@ html {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
-
+/* hover animatie  */
 .continue-button:hover {
     background-color: #003366;
 }
 
+
+/* deze css zorgt voor de animatie als je op de website kotm  */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -109,6 +114,8 @@ html {
 
 /* css header  */
 
+
+/* css hoe de header eruit ziet  */
 header {
     display: flex;
     justify-content: center;
@@ -120,6 +127,7 @@ header {
     transition: background-color 0.3s;
 }
 
+/* navigatie balk css  */
 .nav-item {
     color: white;
     text-decoration: none;
@@ -130,14 +138,14 @@ header {
     border-radius: 10px;
     transition: background-color 0.3s, border-color 0.3s, padding 0.3s, font-size 0.3s;
 }
-
+/* css voor de hover over de nav  */
 .nav-item:hover {
     background-color: darkblue;
     border: 2px solid white;
     padding: 10px 20px;
     font-size: 22px;
 }
-
+/* responsive ontwerp voor de header  */
 @media (max-width: 768px) {
     .nav-item {
         color: white;
@@ -152,14 +160,15 @@ header {
 
 /* css footer  */
 
-.footer {
+/* hoe de footer eruit ziet */
+footer {
     background-color: #0A4DA2;
     color: white;
     text-align: center;
     padding: 20px 0;
     height: auto;
 }
-
+/* wat er in de footer zit  */
 .footer-content {
     display: flex;
     justify-content: space-around;
@@ -168,6 +177,7 @@ header {
     padding: 20px;
 }
 
+/* text in de footer  */
 .footer-section {
     flex: 1;
     padding: 10px;
@@ -199,6 +209,7 @@ header {
     color: #FFD700;
 }
 
+/* css voor socials  */
 .social-links a {
     display: inline-block;
     margin-right: 10px;
@@ -221,6 +232,8 @@ header {
     margin-top: 20px;
 }
 
+/* responsive ontwerp voor de footer  */
+
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
@@ -228,7 +241,6 @@ header {
 }
 
 /* Css Contact  */
-
 
 .contact-page {
     justify-content: center;
@@ -239,6 +251,8 @@ header {
     position: relative;
     overflow: hidden;
 }
+
+/* css voor de bolletjes  */
 
 .contact-page::before {
     content: '';
@@ -271,6 +285,8 @@ header {
     z-index: 1;
 }
 
+/* contact form css  */
+
 .contact-form {
     width: 50%;
     flex-basis: 60%;
@@ -289,8 +305,7 @@ header {
     margin-bottom: 5px;
 }
 
-.form-field input[type="text"],
-.form-field input[type="email"],
+.form-field input,
 .form-field textarea {
     width: 100%;
     padding: 8px;
@@ -316,12 +331,16 @@ header {
     background-color: #085a8c;
 }
 
+/* css voor de image  */
+
 .contact-images {
     flex-basis: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* responsive ontwerp  */
 
 @media (max-width: 768px) {
     .contact-form-container {
@@ -338,6 +357,8 @@ header {
     }
 }
 
+/* foto voor de contact pagina  */
+
 .imgcontact {
     width: 550px;
     height: 550px;
@@ -347,6 +368,35 @@ header {
 }
 
 /* Project Css  */
+
+/* css zorgt voor bolletjes rechts boven en links onder  */
+.projects-background::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    background-color: #0A4DA2;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.projects-background::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    background-color: #FFD700;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+/* zorgt voor center van de text  */
 .projects-page {
 
     text-align: center;
@@ -364,14 +414,18 @@ header {
     flex-wrap: wrap;
 }
 
+/* de projecten  */
+
 .project {
     width: 30%;
     margin: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 50px;
-    background: rgb(127, 195, 254);
+    background: rgb(255, 255, 255);
 }
+
+/* project image  */
 
 .project img {
     width: 100%;
@@ -383,14 +437,17 @@ header {
 
 }
 
+/* responvice project page  */
+
 @media (max-width: 768px) {
     .project {
         width: 100%;
     }
 }
 
+/* achtergrond project website  */
+
 .projects-background {
-    background-image: url('../img/bg.jpg');
     background-color: #f0f8ff;
     position: relative;
     overflow: hidden;
@@ -402,6 +459,8 @@ header {
 
 
 /* about Css   */
+
+/* foto's  op about  */
 
 .foto {
     width: 250px;
@@ -427,11 +486,15 @@ header {
     height: 450px;
 }
 
+/* achtergrond about pagina  */
+
 .about-background {
     background-color: #f0f8ff;
     position: relative;
     overflow: hidden;
 }
+
+/* bolletjes op de pagina  */
 
 .about-background::before,
 .about-background::after {
@@ -463,6 +526,8 @@ header {
     padding: 20px;
 }
 
+/* intro  */
+
 .intro-section {
     display: flex;
     justify-content: center;
@@ -486,6 +551,8 @@ header {
     color: #0A4DA2;
 }
 
+/* hobby's  */
+
 .hobbies-section {
     display: flex;
     justify-content: space-around;
@@ -504,6 +571,8 @@ header {
 .hobby h3 {
     color: #0A4DA2;
 }
+
+/* responsive ontwerp voor de pagina  */
 
 @media (max-width: 768px) {
     .container {
